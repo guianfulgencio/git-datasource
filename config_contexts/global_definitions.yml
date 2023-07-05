@@ -1,6 +1,6 @@
 ---
 _metadata:
-  name: tacacs
+  name: global-definitions
   weight: 1000
   description: Global config context definitions.
   is_active: true
