@@ -1,4 +1,9 @@
 ---
+_metadata:
+  name: global-definition
+  weight: 1000
+  description: Global config context definitions.
+  is_active: true
 tacacs:
   server:
     APAC:
