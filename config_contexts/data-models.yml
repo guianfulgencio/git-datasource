@@ -1,6 +1,6 @@
 ---
 _metadata:
-  name: global-definitions
+  name: data-models
   weight: 1000
   description: Global config context definitions.
   is_active: true
