@@ -4,6 +4,148 @@ _metadata:
   weight: 1000
   description: Global config context definitions.
   is_active: true
+aaa:
+  new-model: []
+  group:
+    server:
+      APAC:
+        tacacsplus:
+        - name: ACS
+          server:
+            name:
+            - name: SIN_ACS
+            - name: PERTH_ACS
+            - name: HOU_ACS
+          ip:
+            vrf:
+              forwarding: Mgmt-vrf
+        radius:
+        - name: AAA
+          server:
+            name:
+            - name: HOU_RadiusVIP
+            - name: LON_RadiusVIP
+            - name: SIN_RadiusVIP
+      EMEA:
+        tacacsplus:
+        - name: ACS
+          server:
+            name:
+            - name: LON_ACS
+            - name: HOU_ACS
+          ip:
+            vrf:
+              forwarding: Mgmt-vrf
+        radius:
+        - name: AAA
+          server:
+            name:
+            - name: HOU_RadiusVIP
+            - name: LON_RadiusVIP
+            - name: SIN_RadiusVIP
+      US:
+        tacacsplus:
+        - name: ACS
+          server:
+            name:
+            - name: HOU_ACS
+            - name: LON_ACS
+          ip:
+            vrf:
+              forwarding: Mgmt-vrf
+        radius:
+        - name: AAA
+          server:
+            name:
+            - name: HOU_RadiusVIP
+            - name: LON_RadiusVIP
+            - name: SIN_RadiusVIP
+  authentication:
+    dot1x:
+      default:
+        group: AAA
+    enable:
+      default:
+        group: ACS
+        enable: []
+    login:
+    - name: default
+      a1:
+        group: ACS
+      a2:
+        local: []
+  authorization:
+    commands:
+    - level: 0
+      list-name: default
+      local: []
+      group: ACS
+      if-authenticated: []
+    - level: 1
+      list-name: default
+      local: []
+      group: ACS
+      if-authenticated: []
+    - level: 15
+      list-name: default
+      local: []
+      group: ACS
+      if-authenticated: []
+    config-commands: []
+    exec:
+    - name: default
+      a1:
+        group: ACS
+      a2:
+        if-authenticated: []
+    network:
+    - id: default
+      a1:
+        group: AAA
+  accounting:
+    commands:
+    - level: 0
+      list-name: default
+      action-type: start-stop
+      group: ACS
+    - level: 1
+      list-name: default
+      action-type: start-stop
+      group: ACS
+    - level: 15
+      list-name: default
+      action-type: start-stop
+      group: ACS
+    connection:
+    - name: default
+      start-stop:
+        group1:
+          group: ACS
+    dot1x:
+      default:
+        start-stop:
+          group: AAA
+    exec:
+    - name: default
+      start-stop:
+        group1:
+          group: ACS
+    network:
+    - id: default
+      start-stop:
+        group: AAA
+    system:
+      default:
+        none: []
+        start-stop:
+          group: ACS
+    update:
+      newinfo: {}
+  server:
+    radius:
+      dynamic-author: {}
+  session-id: common
+
 tacacs:
   server:
     APAC:
