@@ -115,3 +115,68 @@ tacacs:
       key:
         encryption: '7'
         key: 06031D344F4B1A1606041B08
+
+ntp:
+  access-group:
+    peer:
+      acl: 40
+
+  server:
+    APAC:
+      server-list:
+      - ip-address: 134.248.2.29
+      - ip-address: 146.40.10.21
+        prefer:
+        - null
+
+    US:
+      server-list:
+      - ip-address: 146.22.8.197
+      - ip-address: 134.248.2.29
+      - ip-address: 146.22.70.251
+        prefer:
+        - null
+
+    EMEA:
+      server-list:
+      - ip-address: 146.22.70.251
+      - ip-address: 146.38.105.70
+      - ip-address: 146.38.37.9
+        prefer:
+        - null
+
+logging:
+
+  buffered:
+    size:
+      size-value: 128000
+
+  history:
+    size: 10
+
+  host:
+    ipv4-host-list:
+
+      APAC:
+      - ipv4-host: 146.40.10.9
+      - ipv4-host: 146.38.53.162
+
+      US:
+      - ipv4-host: 134.248.81.53
+      - ipv4-host: 146.36.114.214
+
+      EMEA:
+      - ipv4-host: 134.248.81.53
+      - ipv4-host: 146.38.53.162
+
+  source-interface:
+  - interface-name: mgmt_interface
+
+
+
+
+
+
+
+
+        
