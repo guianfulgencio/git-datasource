@@ -1,2 +1,4 @@
 interfaces:
-
+  - name: eth1
+    description: "interface"
+    
