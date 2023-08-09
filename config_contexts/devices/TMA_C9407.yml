@@ -22,14 +22,6 @@ vlan:
 
 interface:
   GigabitEthernet:
-  - name: 0/0
-    shutdown:
-    - null
-    vrf:
-      forwarding: Mgmt-vrf
-    negotiation:
-      auto: true
-
   - name: 1/0/1
     switchport:
       access:
