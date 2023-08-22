@@ -8,6 +8,7 @@ _metadata:
     - slug: juniper_junos
 
 ntp:
+  servers:
   - ip: 139.65.136.129
   - ip: 139.65.136.130
   - ip: 139.65.136.131
