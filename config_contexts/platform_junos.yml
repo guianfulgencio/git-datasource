@@ -1,0 +1,18 @@
+---
+_metadata:
+  name: juniper_junos
+  weight: 1000
+  description: Global config context definitions for JUNOS.
+  is_active: true
+  platforms:
+    - slug: juniper_junos
+ntp:
+  - ip: 139.65.136.129
+  - ip: 139.65.136.130
+  - ip: 139.65.136.131
+  - ip: 139.65.136.132
+  
+logging:
+  servers:
+    - 139.65.136.135
+    - 139.65.245.14
