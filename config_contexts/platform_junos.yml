@@ -6,6 +6,7 @@ _metadata:
   is_active: true
   platforms:
     - slug: juniper_junos
+
 ntp:
   - ip: 139.65.136.129
   - ip: 139.65.136.130
