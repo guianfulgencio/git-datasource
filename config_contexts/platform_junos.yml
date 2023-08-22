@@ -1,7 +1,7 @@
 ---
 _metadata:
   name: juniper_junos
-  weight: 100
+  weight: 1000
   description: Global config context definitions for JUNOS.
   is_active: true
   platforms:
