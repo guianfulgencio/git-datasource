@@ -867,5 +867,5 @@ management:
   ip:
     address:
       primary:
-        address: 146.40.114.5
+        address: 136.171.179.55
         mask: 255.255.255.0
