@@ -862,8 +862,8 @@ default-gateway: 146.40.114.1
 
 management:
   interface:
-    name: Vlan
-    number: 147
+    name: GigabitEthernet
+    number: 0/0
   ip:
     address:
       primary:
