@@ -1,0 +1,12 @@
+---
+_metadata:
+  name: "tenant-thailand"
+  weight: 2000
+  description: "Global config context definitions for THAILAND BU."
+  is_active: true
+  tenants:
+    - slug: "tbu"
+logging:
+  servers: "146.22.250.165"
+  protocol: "tcp"
+  port: 5149
