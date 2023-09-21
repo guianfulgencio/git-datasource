@@ -1,0 +1,11 @@
+---
+_metadata:
+  name: "tenant-canada"
+  weight: 3000
+  description: "Global config context definitions for CANADA BU."
+  is_active: true
+  tenants:
+    - slug: "canada"
+logging:
+  servers:
+    - "172.20.254.133"
