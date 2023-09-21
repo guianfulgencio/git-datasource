@@ -1,0 +1,12 @@
+---
+_metadata:
+  name: "region-americas"
+  weight: 2000
+  description: "Global config context definitions for REGION AMERICAS."
+  is_active: true
+  regions:
+    - slug: "americas"
+logging:
+  servers:
+    - "139.65.140.24"
+    - "139.65.140.25"
