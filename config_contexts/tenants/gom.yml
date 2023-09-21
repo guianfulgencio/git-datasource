@@ -1,0 +1,13 @@
+---
+_metadata:
+  name: "tenant-gom"
+  weight: 2000
+  description: "Global config context definitions for GOM BU."
+  is_active: true
+  tenants:
+    - slug: "gom"
+logging:
+  servers:
+    - "146.24.240.56"
+    - "146.36.114.214"
+    - "139.65.140.24"
