@@ -10,7 +10,7 @@ logging:
   servers:
     - "146.38.53.162"
     - "139.65.141.24"
-snmp_config:
+snmp:
   snmpv2c:
     - community_string: ch3vr0n!
   snmpv3:
