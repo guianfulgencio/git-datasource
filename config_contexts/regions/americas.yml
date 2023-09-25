@@ -23,17 +23,17 @@ snmp:
 
   server:
       - ip: 139.65.136.12
-        user: CVX2023
+        user: cvx2023
         version: '3'
         securitylevel: priv
       - ip: 139.65.136.11
-        user: CVX2023
+        user: cvx2023
         version: '3'
         securitylevel: priv
   
   user:
     names:
-    - username: CVX2023
+    - username: cvx2023
       grpname: CVX-NMS
       v3:
         auth:
