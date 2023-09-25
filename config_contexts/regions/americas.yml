@@ -12,16 +12,37 @@ logging:
     - "139.65.140.25"
     
 snmp:
-  snmpv2c:
-    - community_string: ch3vr0n!
-  snmpv3:
-    snmp_server_group:
-      name: CVX-NMS
-    snmp_server_hosts:
-      - host: 139.65.136.12
-        version: 3
-        user: cvx2023
-        auth_protocol: sha
-        auth_passphrase: AuthPassphrase
-        priv_protocol: aes128
-        priv_passphrase: PrivPassphrase
+  group:
+  - id: CVX-NMS
+    v3:
+      security-level: priv
+      read: V3Read
+      write: V3Write
+      notify: V3Notify
+      access: cvx-snmpv3-acl
+
+  server:
+      - ip: 139.65.136.12
+        user: CVX2023
+        version: '3'
+        security-level: priv
+  
+  user:
+    names:
+    - username: CVX2023
+      grpname: CVX-NMS
+      v3:
+        auth:
+          sha:
+            auth:
+              authpass: auth_pass
+              priv:
+                aes:
+                  algo128:
+                    privpass:
+                      privpass: priv_pass
+
+
+  
+  
+        
