@@ -20,7 +20,7 @@ snmp:
       write: V3Write
       notify: V3Notify
       access: cvx-snmpv3-acl
-    - id: CVX-NMS2
+  - id: CVX-NMS2
     v3:
       securitylevel: priv
       read: V3Read
