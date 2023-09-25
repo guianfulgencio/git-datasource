@@ -25,7 +25,7 @@ snmp:
       - ip: 139.65.136.12
         user: CVX2023
         version: '3'
-        security-level: priv
+        securitylevel: priv
   
   user:
     names:
