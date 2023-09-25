@@ -36,7 +36,7 @@ snmp:
         user: cvx2023
         version: '3'
         securitylevel: priv
-  user:
+  users:
     names:
     - username: cvx2023
       grpname: CVX-NMS
