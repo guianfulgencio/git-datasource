@@ -44,12 +44,12 @@ snmp:
         auth:
           sha:
             auth:
-              authpass: auth_pass
+              authpass: <auth_pass>
               priv:
                 aes:
                   algo128:
                     privpass:
-                      privpass: priv_pass
+                      privpass: <priv_pass>
 
 
   
