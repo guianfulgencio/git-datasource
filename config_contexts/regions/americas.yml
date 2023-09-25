@@ -27,7 +27,7 @@ snmp:
       write: V3Write
       notify: V3Notify
       access: cvx-snmpv3-acl
-  server:
+  servers:
       - ip: 139.65.136.12
         user: cvx2023
         version: '3'
