@@ -12,9 +12,6 @@ logging:
     - "139.65.140.25"
     
 snmp_config:
-  snmpv2c:
-  -  community_string: ch3vr0n!
-
   snmpv3:
     snmp_server_hosts:
       - host: 139.65.136.12
