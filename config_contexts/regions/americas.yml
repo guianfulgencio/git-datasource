@@ -28,11 +28,15 @@ snmp:
       notify: V3Notify
       access: cvx-snmpv3-acl
   servers:
+      - ip: 139.65.136.11
+        user: cvx2023
+        version: '3'
+        securitylevel: priv
       - ip: 139.65.136.12
         user: cvx2023
         version: '3'
         securitylevel: priv
-      - ip: 139.65.136.11
+      - ip: 139.65.136.13
         user: cvx2023
         version: '3'
         securitylevel: priv
