@@ -15,7 +15,7 @@ snmp:
   group:
   - id: CVX-NMS
     v3:
-      security-level: priv
+      securitylevel: priv
       read: V3Read
       write: V3Write
       notify: V3Notify
