@@ -10,3 +10,17 @@ logging:
   servers:
     - "146.40.10.9"
     - "139.65.142.24"
+snmp_config:
+  snmpv2c:
+    - community_string: ch3vr0n!
+  snmpv3:
+    snmp_server_group:
+      name: CVX-NMS
+    snmp_server_hosts:
+      - host: 139.65.136.12
+        version: 3
+        user: cvx2023
+        auth_protocol: sha
+        auth_passphrase: AuthPassphrase
+        priv_protocol: aes128
+        priv_passphrase: PrivPassphrase
