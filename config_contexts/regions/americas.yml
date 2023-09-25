@@ -11,7 +11,7 @@ logging:
     - "139.65.140.24"
     - "139.65.140.25"
     
-snmp_config:
+snmp:
   snmpv2c:
     - community_string: ch3vr0n!
   snmpv3:
