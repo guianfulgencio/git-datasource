@@ -23,9 +23,15 @@ snmp:
     - host: "1.1.1.1"
       securitylevel: "priv"
       user: "cvx2023"
+    - host: "1.1.1.1"
+      securitylevel: "priv"
+      user: "cvx2024"      
     - host: "2.2.2.2"
       securitylevel: "priv"
       user: "cvx2023"
+    - host: "2.2.2.2"
+      securitylevel: "priv"
+      user: "cvx2024"
   
   
         
