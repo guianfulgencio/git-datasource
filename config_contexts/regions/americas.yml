@@ -12,13 +12,6 @@ logging:
     - "139.65.140.25"
     
 snmp:
-  users:
-    - name: "cvx2023"
-      auth_pw: "hash"
-      priv_pw: "hash"
-    - name: "cvx2024"
-      auth_pw: "hash"
-      priv_pw: "hash"
   servers_v3:
     - host: "1.1.1.1"
       securitylevel: "priv"
