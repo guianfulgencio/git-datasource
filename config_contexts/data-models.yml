@@ -4,6 +4,17 @@ _metadata:
   weight: 1000
   description: Global config context definitions.
   is_active: true
+snmp:
+  users:
+    - name: "cvx2023"
+      auth_pw: "hash"
+      priv_pw: "hash"
+    - name: "cvx2024"
+      auth_pw: "hash"
+      priv_pw: "hash"
+  acl:
+    - "1.1.1.1/32"
+    - "2.2.2.2/24"
 aaa:
   new-model: []
   group:
