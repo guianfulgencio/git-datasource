@@ -9,9 +9,6 @@ snmp:
     - id: "cvx2023"
       auth_pw: "0x5d937b53e2c29cb62fa16f6e096a6042f827a587"
       priv_pw: "0x775998aed84f24916ac413eb9a27b7fdcd43c878"
-    - id: "cvx2024"
-      auth_pw: "hash"
-      priv_pw: "hash"
   acl:
     - "1.1.1.1/32"
     - "2.2.2.2/24"
