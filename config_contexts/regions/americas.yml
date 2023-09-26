@@ -10,7 +10,6 @@ logging:
   servers:
     - "139.65.140.24"
     - "139.65.140.25"
-    
 snmp:
   servers_v3:
     - host: "1.1.1.1"
