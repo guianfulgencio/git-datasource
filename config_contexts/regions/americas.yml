@@ -12,16 +12,16 @@ logging:
     - "139.65.140.25"
 snmp:
   servers_v3:
-    - host: "1.1.1.1"
+    - host: "139.65.136.11"
       securitylevel: "priv"
       user: "cvx2023"
-    - host: "1.1.1.1"
+    - host: "139.65.136.12"
       securitylevel: "priv"
-      user: "cvx2024"      
-    - host: "2.2.2.2"
+      user: "cvx2023"      
+    - host: "139.65.136.13"
       securitylevel: "priv"
       user: "cvx2023"
-    - host: "2.2.2.2"
+    - host: "139.65.136.12"
       securitylevel: "priv"
       user: "cvx2024"
   
