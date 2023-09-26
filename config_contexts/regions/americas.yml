@@ -21,14 +21,11 @@ snmp:
       priv_pw: "hash"
   servers_v3:
     - host: "1.1.1.1"
-      level: "priv"
+      securitylevel: "priv"
       user: "cvx2023"
     - host: "2.2.2.2"
-      level: "priv"
+      securitylevel: "priv"
       user: "cvx2023"
-  servers_v2:
-    - host: "3.3.3.3"
-      community: "test"
   
   
         
