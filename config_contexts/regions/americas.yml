@@ -14,7 +14,7 @@ aaa:
  group:
    tacacs:
      - name: "ISE"
-       radius:
+   radius:
      - name: "<placeholder for radius specific config>"
  server:
      - name: "ISE1"
