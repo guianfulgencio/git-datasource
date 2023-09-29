@@ -8,8 +8,9 @@ _metadata:
     - slug: "americas"
 logging:
   servers:
-    - "139.65.140.24"
-    - "139.65.140.25"
+    - ip: "146.36.114.214"
+      transport: null
+      port: null
 aaa:
   group:
     tacacs:
