@@ -11,14 +11,14 @@ logging:
     - "139.65.140.24"
     - "139.65.140.25"
 aaa:
- group:
-   tacacs:
-     - name: "ISE"
-   radius:
-     - name: "<placeholder for radius specific config>"
- server:
-     - name: "ISE1"
-       ip: "139.65.136.58"
+  group:
+    tacacs:
+      - name: "ISE"
+    radius:
+      - name: "<placeholder for radius specific config>"
+  server:
+    - name: "ISE1"
+      ip: "139.65.136.58"
     - name: "ISE2"
        ip: "139.65.138.26"
     - name: "ISE3"
