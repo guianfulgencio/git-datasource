@@ -4,6 +4,12 @@ _metadata:
   weight: 1000
   description: Global config context definitions.
   is_active: true
+  
+aaa:
+  servers:
+    - "139.65.136.58" 
+    - "139.65.138.26"
+    - "139.65.139.143"
 snmp:
   users:
     - id: "cvx2023"
