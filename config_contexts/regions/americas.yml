@@ -14,18 +14,10 @@ logging:
       transport: "udp"
       port: "51406"
 aaa:
-  group:
-    tacacs:
-      - name: "ISE"
-    radius:
-      - name: "<placeholder for radius specific config>"
-  server:
-    - name: "ISE1"
-      ip: "139.65.136.58"
-    - name: "ISE2"
-      ip: "139.65.138.26"
-    - name: "ISE3"
-      ip: "139.65.139.143"
+  servers:
+    - "139.65.136.58" 
+    - "139.65.138.26"
+    - "139.65.139.143"
 snmp:
   servers_v3:
     - host: "139.65.136.11"
