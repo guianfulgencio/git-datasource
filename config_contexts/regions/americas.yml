@@ -32,6 +32,7 @@ snmp:
     - host: "139.65.136.12"
       securitylevel: "priv"
       user: "cvx2024"
-  
-  
+  ntp:
+    servers:
+    - "139.65.136.11"
         
