@@ -33,19 +33,10 @@ snmp:
     - "139.65.0.0/16"
     
 ntp:
-  access-group:
-    peer:
-      acl: 40
+  servers:
+      - "139.65.136.11"
 
 logging:
-
-  buffered:
-    size:
-      size-value: 128000
-
-  history:
-    size: 10
-
   host:
     ipv4-host-list:
 
