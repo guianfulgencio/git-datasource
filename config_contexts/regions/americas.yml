@@ -20,15 +20,15 @@ aaa:
     - "139.65.139.143"
 snmp:
   servers:
-    139.65.136.11:
+    - 139.65.136.11:
       securitylevel: "priv"
       version: "3"
       user: "cvx2023"
-    139.65.136.12:
+    - 139.65.136.12:
       securitylevel: "priv"
       version: "3"
       user: "cvx2023"      
-    139.65.136.13:
+    - 139.65.136.13:
       securitylevel: "priv"
       version: "3"
       user: "cvx2023"
