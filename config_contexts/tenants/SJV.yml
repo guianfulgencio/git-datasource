@@ -1,0 +1,14 @@
+---
+_metadata:
+  name: "tenant-sjv"
+  weight: 2000
+  description: "Global config context definitions for SJV BU."
+  is_active: true
+  tenants:
+    - name: "SJV"
+logging:
+  servers:
+    - "139.65.140.24"
+    - "146.38.53.162"
+    - "146.36.114.214"
+    - "146.35.144.236"
