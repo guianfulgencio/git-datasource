@@ -5,7 +5,7 @@ _metadata:
   description: "Global config context definitions for SJV BU."
   is_active: true
   tenants:
-    - slug: "sjv"
+    - name: "SJV"
 logging:
   servers:
     - "139.65.140.24"
