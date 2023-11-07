@@ -1,11 +1,13 @@
 ---
 _metadata:
-  name: "tenant-canada"
-  weight: 3000
-  description: "Global config context definitions for CANADA BU."
+  name: "tenant-gom"
+  weight: 2000
+  description: "Global config context definitions for GOM BU."
   is_active: true
   tenants:
-    - name: "CBU"
+    - name: "GOM"
 logging:
   servers:
-    - "172.20.254.133"
+    - "146.24.240.56"
+    - "146.36.114.214"
+    - "139.65.140.24"
