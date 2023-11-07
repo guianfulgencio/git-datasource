@@ -1,20 +1,31 @@
 ---
 _metadata:
-  name: "platform-junos"
-  weight: 6000
-  description: "Global config context definitions for JUNOS."
+  name: "location-americas"
+  weight: 2000
+  description: "Global config context definitions for LOCATION AMERICAS."
   is_active: true
-  platforms:
-    - name: "juniper_junos"
-ntp:
-  servers:
-    - "139.65.136.130"
-    - "139.65.136.131"
-    - "139.65.136.132"
+  locations:
+    - name: "AMERICAS"
 logging:
   servers:
-    - "139.65.245.14"
+    - "139.65.140.24"
+    - "139.65.140.25"
+snmp:
+  servers:
+    139.65.136.11:
+      securitylevel: "priv"
+      version: "3"
+      user: "cvx2023"
+    139.65.136.12:
+      securitylevel: "priv"
+      version: "3"
+      user: "cvx2023"
+    139.65.136.13:
+      securitylevel: "priv"
+      version: "3"
+      user: "cvx2023"
 aaa:
   servers:
     - "139.65.136.58" 
     - "139.65.138.26"
+    - "139.65.139.143"
