@@ -1,0 +1,20 @@
+---
+_metadata:
+  name: "platform-junos"
+  weight: 6000
+  description: "Global config context definitions for JUNOS."
+  is_active: true
+  platforms:
+    - name: "juniper_junos"
+ntp:
+  servers:
+    - "139.65.136.130"
+    - "139.65.136.131"
+    - "139.65.136.132"
+logging:
+  servers:
+    - "139.65.245.14"
+aaa:
+  servers:
+    - "139.65.136.58" 
+    - "139.65.138.26"
