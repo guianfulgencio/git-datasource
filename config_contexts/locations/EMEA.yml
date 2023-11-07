@@ -1,0 +1,23 @@
+---
+_metadata:
+  name: "location-emea"
+  weight: 2000
+  description: "Global config context definitions for LOCATION EMEA."
+  is_active: true
+  locations:
+    - name: "EMEA"
+logging:
+  servers:
+    - "146.38.53.162"
+    - "139.65.141.24"
+snmp:
+  servers:
+    139.65.138.9:
+      securitylevel: "priv"
+      version: "3"
+      user: "cvx2023"
+aaa:
+  servers:
+    - "139.65.138.26"
+    - "139.65.136.58"
+    - "139.65.139.143"
