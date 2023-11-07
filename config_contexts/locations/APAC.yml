@@ -1,0 +1,27 @@
+---
+_metadata:
+  name: "location-apac"
+  weight: 2000
+  description: "Global config context definitions for LOCATION APAC."
+  is_active: true
+  locations:
+    - name: "APAC"
+logging:
+  servers:
+    - "146.40.10.9"
+    - "139.65.142.24"
+snmp:
+  servers:
+    139.65.142.8:
+      securitylevel: "priv"
+      version: "3"
+      user: "cvx2023"
+    139.65.142.12:
+      securitylevel: "priv"
+      version: "3"
+      user: "cvx2023"
+aaa:
+  servers:
+    - "139.65.139.143"
+    - "139.65.136.58"
+    - "139.65.138.26"
