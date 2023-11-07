@@ -5,7 +5,7 @@ _metadata:
   description: "Global config context definitions for CANADA BU."
   is_active: true
   tenants:
-    - slug: "canada"
+    - name: "CBU"
 logging:
   servers:
     - "172.20.254.133"
