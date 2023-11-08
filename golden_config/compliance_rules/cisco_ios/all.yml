@@ -2,8 +2,7 @@
 - feature_slug: "hostname"
   platform_network_driver: "cisco_ios"
   config_ordered: false
-  match_config: |
-    hostname
+  match_config: "hostname"
   config_type: "cli"
 - feature_slug: "services"
   platform_network_driver: "cisco_ios"
