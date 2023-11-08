@@ -5,6 +5,28 @@
   match_config: |
     hostname
   config_type: "cli"
+- feature_slug: "logging"
+  platform_network_driver: "cisco_ios"
+  config_ordered: false
+  match_config: |
+    logging
+    no logging 
+  config_type: "cli"
+- feature_slug: "ntp"
+  platform_network_driver: "cisco_ios"
+  config_ordered: false
+  match_config: |
+    ntp server
+    ntp access-group
+    ip access-list standard 40 
+  config_type: "cli"
+- feature_slug: "snmp"
+  platform_network_driver: "cisco_ios"
+  config_ordered: false
+  match_config: |
+    snmp-server
+    ip access-list standard cvx-snmpv3-acl
+  config_type: "cli"
 - feature_slug: "aaa"
   platform_network_driver: "cisco_ios"
   config_ordered: false
@@ -31,13 +53,6 @@
   config_ordered: false
   match_config: "banner"
   config_type: "cli"
-- feature_slug: "log"
-  platform_network_driver: "cisco_ios"
-  config_ordered: false
-  match_config: |
-    logging
-    no logging 
-  config_type: "cli"
 - feature_slug: "ntp"
   platform_network_driver: "cisco_ios"
   config_ordered: false
@@ -45,21 +60,6 @@
     ntp server
     ntp access-group
     ip access-list standard 40 
-  config_type: "cli"
-- feature_slug: "ntp"
-  platform_network_driver: "cisco_ios"
-  config_ordered: false
-  match_config: |
-    ntp server
-    ntp access-group
-    ip access-list standard 40 
-  config_type: "cli"
-- feature_slug: "snmp"
-  platform_network_driver: "cisco_ios"
-  config_ordered: false
-  match_config: |
-    snmp-server
-    ip access-list standard cvx-snmpv3-acl
   config_type: "cli"
 - feature_slug: "line_vty"
   platform_network_driver: "cisco_ios"
