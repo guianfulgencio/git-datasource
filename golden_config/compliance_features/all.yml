@@ -1,4 +1,6 @@
 ---
+- name: "hostname"
+  slug: "hostname"
 - name: "logging"
   slug: "logging"
 - name: "ntp"
