@@ -5,6 +5,24 @@
   match_config: |
     hostname
   config_type: "cli"
+- feature_slug: "services"
+  platform_network_driver: "cisco_ios"
+  config_ordered: false
+  match_config: |
+    service nagle
+    no service pad
+    service tcp-keepalives-in
+    service tcp-keepalives-out
+    service timestamps debug datetime msec localtime show-timezone
+    service timestamps log datetime msec localtime show-timezone
+    service password-encryption
+    no platform punt-keepalive disable-kernel-core
+    no ip forward-protocol nd
+    file verify auto
+    lldp run
+    ip tcp path-mtu-discovery
+    no ip http server
+  config_type: "cli"
 - feature_slug: "logging"
   platform_network_driver: "cisco_ios"
   config_ordered: false
