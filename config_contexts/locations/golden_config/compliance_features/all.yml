@@ -1,0 +1,11 @@
+---
+- name: "logging"
+  slug: "logging"
+- name: "ntp"
+  slug: "ntp"
+- name: "snmp"
+  slug: "snmp"
+- name: "aaa"
+  slug: "aaa"
+- name: "banner"
+  slug: "banner"
