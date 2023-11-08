@@ -54,4 +54,20 @@
     ntp access-group
     ip access-list standard 40 
   config_type: "cli"
+- feature_slug: "snmp"
+  platform_network_driver: "cisco_ios"
+  config_ordered: false
+  match_config: |
+    snmp-server
+    ip access-list standard cvx-snmpv3-acl
+  config_type: "cli"
+- feature_slug: "line_vty"
+  platform_network_driver: "cisco_ios"
+  config_ordered: false
+  match_config: |
+    ip access-list standard cvx-vty-acl
+    line con 0
+    line vty 0 4
+    line vty 0 15
+  config_type: "cli"
   
