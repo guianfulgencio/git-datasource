@@ -8,8 +8,8 @@ _metadata:
     - name: "AMERICAS"
 logging:
   servers:
-    - "139.65.140.24"
-    - "139.65.140.25"
+    139.65.140.24:
+    139.65.140.25:
 snmp:
   servers:
     139.65.136.11:
