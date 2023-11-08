@@ -1,0 +1,51 @@
+---
+- feature_slug: "aaa"
+  platform_network_driver: "cisco_ios"
+  config_ordered: false
+  match_config: |
+    aaa new-model
+    aaa group server
+    aaa authorization config
+    aaa authorization exec
+    aaa authorization commands
+    aaa authorization reverse-access
+    aaa accounting update
+    aaa accounting dot1x
+    aaa accounting exec
+    aaa accounting commands
+    aaa accounting connection
+    aaa accounting system
+    aaa authentication login
+    aaa authentication enable
+    aaa session-id common
+    tacacs server
+  config_type: "cli"
+- feature_slug: "banner"
+  platform_network_driver: "cisco_ios"
+  config_ordered: false
+  match_config: "banner"
+  config_type: "cli"
+- feature_slug: "log"
+  platform_network_driver: "cisco_ios"
+  config_ordered: false
+  match_config: |
+    logging
+    no logging 
+  config_type: "cli"
+- feature_slug: "ntp"
+  platform_network_driver: "cisco_ios"
+  config_ordered: false
+  match_config: |
+    ntp server
+    ntp access-group
+    ip access-list standard 40 
+  config_type: "cli"
+- feature_slug: "ntp"
+  platform_network_driver: "cisco_ios"
+  config_ordered: false
+  match_config: |
+    ntp server
+    ntp access-group
+    ip access-list standard 40 
+  config_type: "cli"
+  
