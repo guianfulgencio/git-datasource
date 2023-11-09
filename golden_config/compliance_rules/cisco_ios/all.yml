@@ -35,6 +35,7 @@
   match_config: |
     ntp server
     ntp access-group
+    ntp source
     ip access-list standard 40 
   config_type: "cli"
 - feature_slug: "snmp"
