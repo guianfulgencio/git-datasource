@@ -1,7 +1,7 @@
 {
     "type": "object",
     "properties": {
-        "ntp-servers": {
+        "ntp": {
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
