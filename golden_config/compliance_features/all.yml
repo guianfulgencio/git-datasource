@@ -1,6 +1,8 @@
 ---
 - name: "hostname"
   slug: "hostname"
+- name: "hostname2"
+  slug: "hostname2"
 - name: "services"
   slug: "services"
 - name: "logging"
