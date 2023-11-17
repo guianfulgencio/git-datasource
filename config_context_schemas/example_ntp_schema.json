@@ -1,15 +1,24 @@
 {
-    "type": "object",
-    "properties": {
-        "ntp-servers": {
-            "type": "array",
-            "minItems": 2,
-            "maxItems": 2,
-            "items": {
-                "type": "string",
-                "format": "ipv4"
+  "type": "object",
+  "properties": {
+    "ntp": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "ip": {
+            "type": "string",
+            "format": "ipv4"
+          },
+          "prefer": {
+            "type": "boolean"
             }
-        }
-    },
-    "additionalProperties": false
+        },
+        "required": ["ip", "prefer"]
+      }
+    }
+  },
+  "additionalProperties": false
 }
