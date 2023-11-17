@@ -8,7 +8,7 @@
       "items": {
         "type": "object",
         "properties": {
-          "server": {
+          "servers": {
             "type": "string",
             "format": "ipv4"
           },
