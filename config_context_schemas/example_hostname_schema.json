@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "hostname": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "hostname": {
+            "type": "string"
+          },
+        "required": ["hostname"]
+      }
+    }
+  },
+  "additionalProperties": false
+}
