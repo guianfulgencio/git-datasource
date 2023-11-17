@@ -27,8 +27,6 @@ ntp:
     prefer: false
   - ip: "hello"
     prefer: false
-  - ip: "world"
-    prefer: true
 
 line:
   acl:
