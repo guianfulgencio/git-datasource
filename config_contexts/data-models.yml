@@ -22,11 +22,11 @@ snmp:
     - "139.65.140.0/22"
     - "139.65.192.0/20"
 ntp:
-  - ip: 146.22.8.197.11
+  - ip: "ip address"
     prefer: false
-  - ip: 134.248.2.29.12
+  - ip: "hello"
     prefer: false
-  - ip: 146.22.70.251.13
+  - ip: "world"
     prefer: true
 
 line:
