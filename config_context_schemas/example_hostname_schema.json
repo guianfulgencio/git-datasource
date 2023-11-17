@@ -1,13 +1,15 @@
 {
-    "additionalProperties": false,
+    "type": "object",
     "properties": {
         "ntp-servers": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
             "items": {
-                "format": "ipv4",
-                "type": "string"
-            },
-            "type": "array"
+                "type": "string",
+                "format": "ipv4"
+            }
         }
     },
-    "type": "object"
+    "additionalProperties": false
 }
