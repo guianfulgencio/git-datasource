@@ -1,15 +1,30 @@
 {
-    "type": "object",
-    "properties": {
-        "ntp-servers": {
-            "type": "array",
-            "minItems": 2,
-            "maxItems": 2,
-            "items": {
-                "type": "string",
-                "format": "ipv4"
+    "_metadata": {
+    "name": "global-definition",
+    "weight": 1000,
+    "description": "Global config context definitions.",
+    "is_active": true
+  },
+  "type": "object",
+  "properties": {
+    "ntp": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "servers": {
+            "type": "string",
+            "format": "ipv4"
+          },
+          "prefer": {
+            "type": "boolean"
             }
-        }
-    },
-    "additionalProperties": false
+        },
+        "required": ["servers", "prefer"]
+      }
+    }
+  },
+  "additionalProperties": false
 }
