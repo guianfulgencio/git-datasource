@@ -23,7 +23,7 @@ snmp:
     - "139.65.140.0/22"
     - "139.65.192.0/20"
 ntp:
-  - ip: "ip address"
+  - ip: "ip"
     prefer: false
   - ip: "hello"
     prefer: false
