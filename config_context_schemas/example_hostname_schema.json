@@ -12,11 +12,7 @@
             "type": "string",
             "format": "ipv4"
           },
-          "prefer": {
-            "type": "boolean"
-            }
-        },
-        "required": ["servers", "prefer"]
+        "required": ["servers"]
       }
     }
   },
