@@ -7,7 +7,7 @@ _metadata:
   config_context_schema: "Config Context NTP Schema"
   
 ntp:
-  - ip: 146.22.8.197
+  - ip: 146.22.8.197.11
     prefer: false
   - ip: 134.248.2.29
     prefer: false
