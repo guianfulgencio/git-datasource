@@ -23,13 +23,10 @@ snmp:
     - "139.65.140.0/22"
     - "139.65.192.0/20"
 ntp:
-  - ip: "ip"
-    prefer: false
-  - ip: "hello"
-    prefer: false
-  - ip: "world"
-    prefer: true
-    
+  servers:
+    - "146.22.70.251"
+    - "146.38.37.9"
+    - "146.40.10.21"
 line:
   acl:
     - "139.65.136.0/22"
