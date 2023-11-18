@@ -6,10 +6,34 @@ _metadata:
   is_active: true
   config_context_schema: "Config Context NTP Schema"
   
+aaa:
+  servers:
+    - "139.65.136.58" 
+    - "139.65.138.26"
+    - "139.65.139.143"
+snmp:
+  users:
+    cvx2023:
+      auth_pw: "0x5d937b53e2c29cb62fa16f6e096a6042f827a587"
+      priv_pw: "0x775998aed84f24916ac413eb9a27b7fdcd43c878"
+  acl:
+    - "146.35.147.59/32"
+    - "146.42.255.132/32"
+    - "139.65.136.0/22"
+    - "139.65.140.0/22"
+    - "139.65.192.0/20"
 ntp:
-  - ip: 146.22.8.197.11
-    prefer: false
-  - ip: 134.248.2.29
-    prefer: false
-  - ip: 146.22.70.251
-    prefer: true
+  servers:
+    - "146.22.70.251"
+    - "146.38.37.9"
+    - "146.40.10.21"
+line:
+  acl:
+    - "139.65.136.0/22"
+    - "139.65.140.0/22"
+    - "139.65.192.0/20"
+    - "139.65.193.1/32"
+  password_hash: "03314F1E5402194271252D283356221A0A230E"
+
+  source-interface:
+  - interface-name: mgmt_interface
