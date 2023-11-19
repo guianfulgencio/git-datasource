@@ -6,6 +6,11 @@ _metadata:
   is_active: true
   locations:
     - name: "AMERICAS"
+ntp:
+  servers:
+    - "146.22.70.251.11"
+    - "146.38.37.9.1"
+    - "146.40.10.21.2"
 logging:
   servers:
     139.65.140.24:
