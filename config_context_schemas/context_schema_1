@@ -1,0 +1,23 @@
+---
+_metadata:
+  description: Schema for NTP objects.
+  name: Config Context NTP Schema
+data_schema:
+  type: object
+  properties:
+    ntp:
+      type: array
+      minItems: 3
+      maxItems: 3
+      items:
+        type: object
+        properties:
+          ip:
+            type: string
+            format: ipv4
+          prefer:
+            type: boolean
+        required:
+        - ip
+        - prefer
+  additionalProperties: false
