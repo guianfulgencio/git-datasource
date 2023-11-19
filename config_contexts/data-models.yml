@@ -4,7 +4,6 @@ _metadata:
   weight: 1000
   description: Global config context definitions.
   is_active: true
-  config_context_schema: "Config Context NTP Schema"
   
 aaa:
   servers:
