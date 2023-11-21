@@ -1,3 +1,5 @@
+---
+hostname: "BWI-CVLB8654-SS01.network.chevron.net"
 interfaces:
   - name: mgmt0
     description: "VRF Interface"
