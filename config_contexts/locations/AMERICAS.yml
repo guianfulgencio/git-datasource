@@ -6,7 +6,6 @@ _metadata:
   is_active: true
   locations:
     - name: "AMERICAS"
-  config_context_schema: "Config Context for host"
 ntp:
   servers:
     - "146.22.70.251.11"
