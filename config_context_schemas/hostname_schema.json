@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "description": "Schema for NTP objects.",
+    "description": "Schema for hostname objects.",
     "name": "Config Context for hostname"
   },
   "data_schema": {
