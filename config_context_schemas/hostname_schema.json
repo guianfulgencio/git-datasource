@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "description": "Schema for NTP objects.",
-    "name": "Config Context for host"
+    "name": "Config Context for hostname"
   },
   "data_schema": {
   "type": "object",
