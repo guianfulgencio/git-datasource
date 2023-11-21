@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "description": "Schema for hostname objects.",
-    "name": "Config Context for hostname"
+    "name": "Config Context schema for hostname"
   },
   "data_schema": {
   "type": "object",
