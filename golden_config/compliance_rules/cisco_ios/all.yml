@@ -91,6 +91,14 @@
     ip access-list standard cvx-vty-acl
     line con 0
     line vty 0 4
-    line vty 0 15
+    line vty 5 31
+  config_type: "cli"
+- feature_slug: "dns"
+  platform_network_driver: "cisco_ios"
+  config_ordered: false
+  match_config: |
+    ip domain-lookup
+    ip domain name
+    ip name-server
   config_type: "cli"
   
