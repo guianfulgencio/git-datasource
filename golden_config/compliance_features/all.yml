@@ -17,3 +17,5 @@
   slug: "banner"
 - name: "line_vty"
   slug: "line_vty"
+- name: "dns"
+  slug: "dns"
